@@ -15,6 +15,7 @@
 		DBD044541C73036100635F1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBD044521C73036100635F1C /* LaunchScreen.storyboard */; };
 		DBD0445F1C73036100635F1C /* huahuaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD0445E1C73036100635F1C /* huahuaTests.swift */; };
 		DBD0446A1C73036100635F1C /* huahuaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD044691C73036100635F1C /* huahuaUITests.swift */; };
+		F9DBCB29A5778234F8BE42EE /* Pods_huahua.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 132DAEE0ECACFC474BE378BB /* Pods_huahua.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A285FB1169366B862529607 /* Pods-huahua.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-huahua.debug.xcconfig"; path = "Pods/Target Support Files/Pods-huahua/Pods-huahua.debug.xcconfig"; sourceTree = "<group>"; };
+		132DAEE0ECACFC474BE378BB /* Pods_huahua.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_huahua.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A602997276F5554859B15DBC /* Pods-huahua.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-huahua.release.xcconfig"; path = "Pods/Target Support Files/Pods-huahua/Pods-huahua.release.xcconfig"; sourceTree = "<group>"; };
 		DBD044431C73036100635F1C /* huahua.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = huahua.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBD044461C73036100635F1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBD044481C73036100635F1C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9DBCB29A5778234F8BE42EE /* Pods_huahua.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +81,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F7614B54916AB3C47C6B6DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				132DAEE0ECACFC474BE378BB /* Pods_huahua.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		51756B43F15B3093E7BEE7A2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A285FB1169366B862529607 /* Pods-huahua.debug.xcconfig */,
+				A602997276F5554859B15DBC /* Pods-huahua.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DBD0443A1C73036100635F1C = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +105,8 @@
 				DBD0445D1C73036100635F1C /* huahuaTests */,
 				DBD044681C73036100635F1C /* huahuaUITests */,
 				DBD044441C73036100635F1C /* Products */,
+				51756B43F15B3093E7BEE7A2 /* Pods */,
+				4F7614B54916AB3C47C6B6DF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DBD0446E1C73036100635F1C /* Build configuration list for PBXNativeTarget "huahua" */;
 			buildPhases = (
+				2C9DE74831F9EFE57672016E /* Check Pods Manifest.lock */,
 				DBD0443F1C73036100635F1C /* Sources */,
 				DBD044401C73036100635F1C /* Frameworks */,
 				DBD044411C73036100635F1C /* Resources */,
+				56940A9A5E3BCDDBEEDA6E85 /* Embed Pods Frameworks */,
+				CF7E20596E07B50746774272 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +283,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2C9DE74831F9EFE57672016E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		56940A9A5E3BCDDBEEDA6E85 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-huahua/Pods-huahua-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF7E20596E07B50746774272 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-huahua/Pods-huahua-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DBD0443F1C73036100635F1C /* Sources */ = {
@@ -402,6 +477,7 @@
 		};
 		DBD0446F1C73036100635F1C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A285FB1169366B862529607 /* Pods-huahua.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = huahua/Info.plist;
@@ -413,6 +489,7 @@
 		};
 		DBD044701C73036100635F1C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A602997276F5554859B15DBC /* Pods-huahua.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = huahua/Info.plist;
@@ -489,6 +566,7 @@
 				DBD044701C73036100635F1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DBD044711C73036100635F1C /* Build configuration list for PBXNativeTarget "huahuaTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +575,7 @@
 				DBD044731C73036100635F1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DBD044741C73036100635F1C /* Build configuration list for PBXNativeTarget "huahuaUITests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +584,7 @@
 				DBD044761C73036100635F1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
