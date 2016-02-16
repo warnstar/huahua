@@ -123,9 +123,12 @@
 		DBD044451C73036100635F1C /* huahua */ = {
 			isa = PBXGroup;
 			children = (
+				DBD0448A1C73084E00635F1C /* Utils */,
+				DBD044891C73084500635F1C /* Controllers */,
+				DBD044881C73083C00635F1C /* Models */,
+				DBD044871C73082900635F1C /* Views */,
 				DBD044461C73036100635F1C /* AppDelegate.swift */,
 				DBD044481C73036100635F1C /* ViewController.swift */,
-				DBD0444A1C73036100635F1C /* Main.storyboard */,
 				DBD044501C73036100635F1C /* Assets.xcassets */,
 				DBD044521C73036100635F1C /* LaunchScreen.storyboard */,
 				DBD044551C73036100635F1C /* Info.plist */,
@@ -150,6 +153,35 @@
 				DBD0446B1C73036100635F1C /* Info.plist */,
 			);
 			path = huahuaUITests;
+			sourceTree = "<group>";
+		};
+		DBD044871C73082900635F1C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DBD0444A1C73036100635F1C /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		DBD044881C73083C00635F1C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		DBD044891C73084500635F1C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		DBD0448A1C73084E00635F1C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
