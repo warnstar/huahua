@@ -278,14 +278,14 @@
                                 <state key="normal" title="登录">
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aew-Uv-5hz">
-                                <rect key="frame" x="175" y="426" width="250" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="2W6-V1-F8a"/>
-                                    <constraint firstAttribute="height" constant="40" id="QAi-5F-FMB"/>
-                                </constraints>
-                                <state key="normal" title="注册"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="x19-DP-FS0"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="login_click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uap-ei-w7n"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入手机号" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vlx-dH-gWm">
                                 <rect key="frame" x="218" y="280" width="207" height="16"/>
@@ -310,6 +310,19 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title="忘记密码"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aew-Uv-5hz">
+                                <rect key="frame" x="175" y="426" width="250" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="2W6-V1-F8a"/>
+                                    <constraint firstAttribute="height" constant="40" id="QAi-5F-FMB"/>
+                                </constraints>
+                                <state key="normal" title="注册"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="2W6-V1-F8a"/>
+                                    </mask>
+                                </variation>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -319,44 +332,72 @@
                             <constraint firstItem="YJr-un-Kf4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="23" id="20f-sW-5OE"/>
                             <constraint firstItem="fgK-fh-RjN" firstAttribute="top" secondItem="Gtk-W1-LRv" secondAttribute="bottom" constant="45" id="32x-cN-wFD"/>
                             <constraint firstItem="Vlx-dH-gWm" firstAttribute="leading" secondItem="qy3-PA-DOh" secondAttribute="trailing" constant="12" id="4tn-YF-I5l"/>
+                            <constraint firstItem="fgK-fh-RjN" firstAttribute="trailing" secondItem="aew-Uv-5hz" secondAttribute="trailing" id="6Kh-qr-bMw"/>
                             <constraint firstItem="3iD-15-eJ3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="51" id="79P-92-8dw"/>
                             <constraint firstItem="QS2-My-0H0" firstAttribute="trailing" secondItem="aew-Uv-5hz" secondAttribute="trailing" id="7me-ta-BKK"/>
+                            <constraint firstItem="fgK-fh-RjN" firstAttribute="centerX" secondItem="3iD-15-eJ3" secondAttribute="centerX" id="8ds-Jg-2oQ"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3iD-15-eJ3" secondAttribute="bottom" constant="410" id="9Y1-jr-IyQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="smC-pk-ESm" secondAttribute="trailing" constant="35" id="DUh-eo-m29"/>
                             <constraint firstItem="QN7-R0-yI3" firstAttribute="firstBaseline" secondItem="QS2-My-0H0" secondAttribute="baseline" id="GxY-XY-Zwm"/>
                             <constraint firstItem="3iD-15-eJ3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="51" id="IJE-JO-gkp"/>
                             <constraint firstItem="qy3-PA-DOh" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="KQa-yo-kEn"/>
                             <constraint firstItem="QN7-R0-yI3" firstAttribute="leading" secondItem="aew-Uv-5hz" secondAttribute="leading" id="LiW-7I-Izd"/>
                             <constraint firstItem="aew-Uv-5hz" firstAttribute="centerX" secondItem="smC-pk-ESm" secondAttribute="centerX" id="M9H-bI-rIt"/>
                             <constraint firstItem="fgK-fh-RjN" firstAttribute="top" secondItem="Dfl-rT-Xzw" secondAttribute="bottom" constant="9" id="Oz3-80-01X"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="smC-pk-ESm" secondAttribute="trailing" constant="35" id="QFg-oU-AeZ"/>
                             <constraint firstItem="H3g-uy-tPX" firstAttribute="leading" secondItem="qy3-PA-DOh" secondAttribute="leading" id="QZU-ed-Be6"/>
                             <constraint firstItem="Gtk-W1-LRv" firstAttribute="top" secondItem="qy3-PA-DOh" secondAttribute="bottom" constant="9" id="R50-i3-1gQ"/>
+                            <constraint firstItem="fgK-fh-RjN" firstAttribute="leading" secondItem="aew-Uv-5hz" secondAttribute="leading" id="T82-PX-1mU"/>
                             <constraint firstItem="QN7-R0-yI3" firstAttribute="baseline" secondItem="QS2-My-0H0" secondAttribute="firstBaseline" id="UuL-Yk-yYv"/>
                             <constraint firstItem="QN7-R0-yI3" firstAttribute="centerY" secondItem="QS2-My-0H0" secondAttribute="centerY" id="UuQ-Zj-qTt"/>
                             <constraint firstItem="3iD-15-eJ3" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" constant="114" id="VAc-Lm-AP0"/>
                             <constraint firstItem="Gtk-W1-LRv" firstAttribute="top" secondItem="Vlx-dH-gWm" secondAttribute="bottom" constant="8" symbolic="YES" id="WA9-nO-Yjb"/>
                             <constraint firstItem="fgK-fh-RjN" firstAttribute="top" secondItem="H3g-uy-tPX" secondAttribute="bottom" constant="8" symbolic="YES" id="WCd-HY-onR"/>
+                            <constraint firstItem="fgK-fh-RjN" firstAttribute="trailing" secondItem="smC-pk-ESm" secondAttribute="trailing" id="WeO-Xg-0db"/>
                             <constraint firstItem="YJr-un-Kf4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="XpE-TI-Anw"/>
                             <constraint firstItem="smC-pk-ESm" firstAttribute="centerX" secondItem="fgK-fh-RjN" secondAttribute="centerX" id="Ywe-rh-jL9"/>
                             <constraint firstItem="Dfl-rT-Xzw" firstAttribute="trailing" secondItem="Gtk-W1-LRv" secondAttribute="trailing" id="a8G-fh-JmA"/>
                             <constraint firstItem="QN7-R0-yI3" firstAttribute="top" secondItem="aew-Uv-5hz" secondAttribute="bottom" constant="18" id="aa0-Tq-b74"/>
+                            <constraint firstItem="fgK-fh-RjN" firstAttribute="centerX" secondItem="F5n-tS-5Uf" secondAttribute="centerX" id="bRx-Sw-94s"/>
+                            <constraint firstItem="fgK-fh-RjN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="35" id="dhx-6M-pdZ"/>
                             <constraint firstItem="fgK-fh-RjN" firstAttribute="centerX" secondItem="Gtk-W1-LRv" secondAttribute="centerX" id="eXM-IC-CHp"/>
+                            <constraint firstAttribute="trailing" secondItem="3iD-15-eJ3" secondAttribute="trailing" id="gV7-e9-W4K"/>
                             <constraint firstItem="Gtk-W1-LRv" firstAttribute="centerX" secondItem="F5n-tS-5Uf" secondAttribute="centerX" id="hIo-DK-tOp"/>
+                            <constraint firstItem="fgK-fh-RjN" firstAttribute="leading" secondItem="smC-pk-ESm" secondAttribute="leading" id="iKt-RJ-F6n"/>
                             <constraint firstItem="Dfl-rT-Xzw" firstAttribute="leading" secondItem="Vlx-dH-gWm" secondAttribute="leading" id="j3z-vo-4AE"/>
                             <constraint firstItem="Gtk-W1-LRv" firstAttribute="top" secondItem="F5n-tS-5Uf" secondAttribute="bottom" constant="90" id="mlB-v1-ZBC"/>
                             <constraint firstItem="F5n-tS-5Uf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="134" id="pb5-x6-5pr"/>
+                            <constraint firstItem="smC-pk-ESm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="35" id="pzK-HQ-UjM"/>
                             <constraint firstItem="aew-Uv-5hz" firstAttribute="top" secondItem="smC-pk-ESm" secondAttribute="bottom" constant="10" id="q1r-1k-fa1"/>
+                            <constraint firstItem="3iD-15-eJ3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qOH-Fm-XPS"/>
                             <constraint firstItem="Dfl-rT-Xzw" firstAttribute="top" secondItem="Gtk-W1-LRv" secondAttribute="bottom" constant="20" id="qda-BZ-Od6"/>
                             <constraint firstItem="Vlx-dH-gWm" firstAttribute="trailing" secondItem="Gtk-W1-LRv" secondAttribute="trailing" id="rKx-9I-pby"/>
                             <constraint firstItem="smC-pk-ESm" firstAttribute="top" secondItem="fgK-fh-RjN" secondAttribute="bottom" constant="25" id="tCj-vE-JXN"/>
+                            <constraint firstItem="fgK-fh-RjN" firstAttribute="leading" secondItem="smC-pk-ESm" secondAttribute="leading" id="uPx-0S-by2"/>
                             <constraint firstItem="Gtk-W1-LRv" firstAttribute="leading" secondItem="qy3-PA-DOh" secondAttribute="trailing" constant="-31" id="uQF-V4-uKR"/>
+                            <constraint firstItem="fgK-fh-RjN" firstAttribute="leading" secondItem="aew-Uv-5hz" secondAttribute="leading" id="ukP-3I-8p1"/>
                             <constraint firstItem="3iD-15-eJ3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="w50-tD-51I"/>
+                            <constraint firstItem="fgK-fh-RjN" firstAttribute="leading" secondItem="Gtk-W1-LRv" secondAttribute="leading" id="x5Y-Ym-3Bt"/>
                             <constraint firstItem="F5n-tS-5Uf" firstAttribute="centerX" secondItem="3iD-15-eJ3" secondAttribute="centerX" id="zXO-pT-u6k"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="0VN-Z5-WIh"/>
                                 <exclude reference="79P-92-8dw"/>
                                 <exclude reference="VAc-Lm-AP0"/>
+                                <exclude reference="w50-tD-51I"/>
+                                <exclude reference="zXO-pT-u6k"/>
                                 <exclude reference="KQa-yo-kEn"/>
+                                <exclude reference="hIo-DK-tOp"/>
+                                <exclude reference="dhx-6M-pdZ"/>
+                                <exclude reference="eXM-IC-CHp"/>
+                                <exclude reference="iKt-RJ-F6n"/>
+                                <exclude reference="ukP-3I-8p1"/>
+                                <exclude reference="DUh-eo-m29"/>
+                                <exclude reference="QFg-oU-AeZ"/>
+                                <exclude reference="Ywe-rh-jL9"/>
+                                <exclude reference="pzK-HQ-UjM"/>
+                                <exclude reference="M9H-bI-rIt"/>
                                 <exclude reference="9Y1-jr-IyQ"/>
                             </mask>
                         </variation>

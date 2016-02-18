@@ -26,7 +26,7 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         login_btn.backgroundColor = colorWithHexString("#4da800")
         login_btn.setTitleColor(colorWithHexString("#ffffff"), forState: UIControlState.Normal)
@@ -61,6 +61,22 @@ class LoginViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    @IBAction func login_click(sender: UIButton) {
+        
+        let account = account_input.text!
+        let password = pwd_input.text!
+        if account.characters.count > 0 && password.characters.count > 0  {
+            Privilege.login(account, log_password: password)
+
+        }else{
+            
+        }
+        
+       
+        
+        
+        
     }
     
     /*

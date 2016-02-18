@@ -9,6 +9,13 @@
 import Foundation
 import UIKit
 
+/**
+ 将16进制的颜色转成UIColor
+ 
+ - parameter hex: 16进制颜色
+ 
+ - returns: return UIColor 返回UIColor
+ */
 func colorWithHexString (hex:String) -> UIColor {
     var cString:String = hex.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet()).uppercaseString
     
@@ -31,6 +38,8 @@ func colorWithHexString (hex:String) -> UIColor {
     NSScanner(string: gString).scanHexInt(&g)
     NSScanner(string: bString).scanHexInt(&b)
     
-    
     return UIColor(red: CGFloat(r) / 255.0, green: CGFloat(g) / 255.0, blue: CGFloat(b) / 255.0, alpha: CGFloat(1))
 }
+
+
+

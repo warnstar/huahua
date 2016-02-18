@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		0695B663AAFDE0735B1BF0AD /* Pods_huahua.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E48A1B9BB61FBAEC21A06460 /* Pods_huahua.framework */; };
 		DB1B93011C741EAB00F2FA1E /* CommonHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B93001C741EAB00F2FA1E /* CommonHelp.swift */; };
+		DB94807D1C7579F1004B51A8 /* Common_ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB94807C1C7579F1004B51A8 /* Common_ext.swift */; };
+		DBB84ECF1C746B2400F56D98 /* PrivilegeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB84ECE1C746B2400F56D98 /* PrivilegeController.swift */; };
+		DBB84ED11C746B9C00F56D98 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB84ED01C746B9C00F56D98 /* UserModel.swift */; };
+		DBB84ED31C748C3600F56D98 /* Common_Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB84ED21C748C3600F56D98 /* Common_Config.swift */; };
 		DBD044981C730FDA00635F1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD044971C730FDA00635F1C /* AppDelegate.swift */; };
 		DBD0449A1C730FDA00635F1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD044991C730FDA00635F1C /* ViewController.swift */; };
 		DBD0449D1C730FDA00635F1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBD0449B1C730FDA00635F1C /* Main.storyboard */; };
@@ -40,6 +44,10 @@
 /* Begin PBXFileReference section */
 		CC00F14C59B19408286EF712 /* Pods-huahua.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-huahua.debug.xcconfig"; path = "Pods/Target Support Files/Pods-huahua/Pods-huahua.debug.xcconfig"; sourceTree = "<group>"; };
 		DB1B93001C741EAB00F2FA1E /* CommonHelp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonHelp.swift; sourceTree = "<group>"; };
+		DB94807C1C7579F1004B51A8 /* Common_ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common_ext.swift; sourceTree = "<group>"; };
+		DBB84ECE1C746B2400F56D98 /* PrivilegeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivilegeController.swift; sourceTree = "<group>"; };
+		DBB84ED01C746B9C00F56D98 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		DBB84ED21C748C3600F56D98 /* Common_Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common_Config.swift; sourceTree = "<group>"; };
 		DBD044941C730FDA00635F1C /* huahua.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = huahua.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBD044971C730FDA00635F1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBD044991C730FDA00635F1C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				DB1B93001C741EAB00F2FA1E /* CommonHelp.swift */,
+				DBB84ED21C748C3600F56D98 /* Common_Config.swift */,
+				DB94807C1C7579F1004B51A8 /* Common_ext.swift */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -170,6 +180,7 @@
 		DBD044C81C73272700635F1C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DBD044CE1C73281900635F1C /* LoginViewController.swift */,
 				DBD0449B1C730FDA00635F1C /* Main.storyboard */,
 			);
 			name = Views;
@@ -178,6 +189,7 @@
 		DBD044CA1C73274C00635F1C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DBB84ED01C746B9C00F56D98 /* UserModel.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -185,7 +197,7 @@
 		DBD044CB1C73275600635F1C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				DBD044CE1C73281900635F1C /* LoginViewController.swift */,
+				DBB84ECE1C746B2400F56D98 /* PrivilegeController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -376,8 +388,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB1B93011C741EAB00F2FA1E /* CommonHelp.swift in Sources */,
+				DBB84ED11C746B9C00F56D98 /* UserModel.swift in Sources */,
+				DBB84ECF1C746B2400F56D98 /* PrivilegeController.swift in Sources */,
 				DBD044CF1C73281900635F1C /* LoginViewController.swift in Sources */,
+				DBB84ED31C748C3600F56D98 /* Common_Config.swift in Sources */,
 				DBD044A01C730FDA00635F1C /* huahua.xcdatamodeld in Sources */,
+				DB94807D1C7579F1004B51A8 /* Common_ext.swift in Sources */,
 				DBD0449A1C730FDA00635F1C /* ViewController.swift in Sources */,
 				DBD044981C730FDA00635F1C /* AppDelegate.swift in Sources */,
 			);
