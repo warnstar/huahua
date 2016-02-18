@@ -10,3 +10,10 @@ import Foundation
 
 //服务器接口起始地址
 let SERVER_URL = "http://192.168.8.142/huahua_api/index.php"
+
+let ERRORINFO:Dictionary<String,String> = [
+    "DEFAULT"   :   "发生错误",
+    "UNKNOWN"   :   "未知错误",
+    "NETWORK"   :   "网络错误!",
+    "FORBIDON"  :   "权限不足!",
+]

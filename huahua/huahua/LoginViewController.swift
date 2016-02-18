@@ -70,7 +70,7 @@ class LoginViewController: UIViewController {
             Privilege.login(account, log_password: password)
 
         }else{
-            
+            //密码账户不能为空
         }
         
        
